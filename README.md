@@ -153,7 +153,19 @@ Para exportar los commits de la versión integrada:
 ```bash
 git log main --date=iso --pretty=fuller > historial_commits.txt
 ```
+## Fork - Yerik
 
+### Modificación del laberinto
+Se agregaron 4 caminos nuevos al mapa original de Pacman.
+
+### Velocidad de los fantasmas
+Se aumentó la velocidad de los fantasmas de 5 a 10 unidades, manteniendo la velocidad de Pacman y el temporizador original.
+
+### Colores de los fantasmas
+Se agregaron 4 colores nuevos: rojo, rosa, cyan y naranja.
+
+### Pruebas
+Se verificó el funcionamiento de los nuevos caminos, el movimiento de los fantasmas, las colisiones con las paredes y los controles de Pacman.
 ## Implementación de Diego: fantasmas inteligentes
 
 Se añadió `choose_direction(point, course)` para revisar las

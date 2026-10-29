@@ -13,7 +13,8 @@ from turtle import *
 
 from freegames import floor, vector
 
-GHOST_SPEED = 5
+GHOST_SPEED = 10
+GHOST_COLORS = ['red', 'pink', 'cyan', 'orange']
 
 state = {'score': 0}
 path = Turtle(visible=False)
@@ -51,6 +52,12 @@ tiles = [
 ]
 # fmt: on
 
+# Cambios (abre 4 caminos adicionales)
+
+tiles [4 *20 + 3] = 1
+tiles [6 *20 + 3] = 1
+tiles [12 *20 + 3] = 1
+tiles [14 *20 + 3] = 1
 
 def square(x, y):
     """Draw square using path at (x, y)."""
@@ -165,15 +172,14 @@ def move():
     goto(pacman.x + 10, pacman.y + 10)
     dot(20, 'yellow')
 
-    for point, course in ghosts:
+    for index, (point, course) in enumerate(ghosts):
         choose_direction(point, course)
-
         if valid(point + course):
             point.move(course)
 
         up()
         goto(point.x + 10, point.y + 10)
-        dot(20, 'red')
+        dot(20, GHOST_COLORS[index])
 
     update()
 
