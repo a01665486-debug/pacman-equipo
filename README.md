@@ -28,7 +28,7 @@ El primer commit conserva el código sin modificaciones.
 | Integrante | Matrícula | GitHub | Rol |
 |---|---|---|---|
 | Diego Lemus Mejía | A01665486 | a01665486-debug | Dueño / Main |
-| Yerik Escobar Asprón | Por completar | Por completar | Fork |
+| Yerik Escobar Asprón | A01665486 | yeaspron | Fork |
 
 Cada integrante utiliza su propia cuenta. Yerik contribuye desde
 un fork, sin acceso de colaborador al repositorio original.
